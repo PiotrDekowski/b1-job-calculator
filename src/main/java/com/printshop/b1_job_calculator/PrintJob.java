@@ -36,6 +36,13 @@ public class PrintJob {
         this.netQuantity = netQuantity;
     }
 
+    /**
+     * Checks if the sheet uses the full standard B1 format (1000 x 700 mm).
+     */
+    public boolean isStandardB1() {
+        return sheetWidthMm == 1000 && sheetHeightMm == 700;
+    }
+
     // Methods: actions and checks for this job
     /**
      * Checks if the sheet size fits in the B1 press.
