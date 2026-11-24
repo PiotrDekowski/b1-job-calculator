@@ -8,8 +8,8 @@ package com.printshop.b1_job_calculator;
 public class PrintJob {
 
     // Constants: min and max sheet size for the B1 press (in mm)
-    public static final int MAX_WIDTH_MM = 750;
-    public static final int MAX_HEIGHT_MM = 1060;
+    public static final int MAX_WIDTH_MM = 1050;
+    public static final int MAX_HEIGHT_MM = 750;
     public static final int MIN_WIDTH_MM = 340;
     public static final int MIN_HEIGHT_MM = 480;
 
