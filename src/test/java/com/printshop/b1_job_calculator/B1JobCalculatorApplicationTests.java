@@ -3,8 +3,7 @@ package com.printshop.b1_job_calculator;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class B1JobCalculatorApplicationTests {
@@ -20,5 +19,12 @@ class B1JobCalculatorApplicationTests {
 		assertTrue(standardB1.isStandardB1());
 		assertFalse(smallerSheet.isStandardB1());
 
+	}
+
+	@Test
+	void shouldCalculateGrossQuantityWithTenPercentAllowance() {
+		PrintJob job = new PrintJob("Brochure B1", 1000, 700,500);
+
+		assertEquals(550, job.calculateGrossQuantity());
 	}
 }

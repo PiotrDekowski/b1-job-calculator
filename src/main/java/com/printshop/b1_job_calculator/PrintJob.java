@@ -53,5 +53,10 @@ public class PrintJob {
         return sheetWidthMm >= MAX_WIDTH_MM && sheetWidthMm <= MAX_WIDTH_MM && sheetHeightMm >= MIN_HEIGHT_MM && sheetHeightMm <= MAX_HEIGHT_MM;
     }
 
+    public int calculateGrossQuantity(){
+        int gross = (int) (netQuantity * 1.10) ;
+        return gross;
+    }
+
 
 }
